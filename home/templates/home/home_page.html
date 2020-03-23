@@ -38,11 +38,8 @@
   </a>
 </div>
 <div class="container-sm"> 
-  <a id ="test_link">test</a>
         {% for block in page.content %}
-                <h1>{{ block.title }} - Das sind die neuen Titel</h1>
                 {% include_block block %}
         {% endfor %}
-        <a href="#test_link">Go to test</a>
 </div>
 {% endblock content %}

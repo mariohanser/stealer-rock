@@ -1,4 +1,6 @@
 {% load wagtailimages_tags %}
+<a id="{{self.title}}">
+  <h1 class="text-center">{{ self.title }}</h1></a><br>
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     {% for card in self.cards %}

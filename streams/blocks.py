@@ -30,7 +30,7 @@ class RichtextBlock(blocks.RichTextBlock):
 
 class CardBlock(blocks.StructBlock):
     """Cards with image and text"""
-    title = blocks.CharBlock(required=False, help_text="Name")
+    title = blocks.CharBlock(required=True, help_text="Name")
 
     cards = blocks.ListBlock(
             blocks.StructBlock(
@@ -49,6 +49,7 @@ class CardBlock(blocks.StructBlock):
 
 class CardBlockLink(blocks.StructBlock):
     """Cards with image and Links"""
+    title = blocks.CharBlock(required=True, help_text="Add your title")
     cards = blocks.ListBlock(
             blocks.StructBlock(
                 [
